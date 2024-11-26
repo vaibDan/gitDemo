@@ -1,7 +1,36 @@
-h1 {
-    color: aquamarine;
+/* Set up the body to fill the viewport */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    background: linear-gradient(270deg, #ff7eb3, #65e7ff, #ffc65c);
+    background-size: 600% 600%;
+    animation: waveBackground 8s ease infinite;
 }
 
-body {
-    background-color: peru;
+/* Waving background animation */
+@keyframes waveBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Optional text styles */
+h1 {
+    font-size: 3rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
